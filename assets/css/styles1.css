@@ -1,0 +1,117 @@
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+    and (min-device-width : 320px) 
+    /* and (max-device-width : 600px)  */
+    /* Styles */   
+  {  
+    display: grid;
+    
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/assets/img/tree_full_page.svg);
+        /* background-size: 100vh 100vw; */
+        
+
+    }
+    
+
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+.container, .button, .nav{
+  position: absolute;
+}
+
+.container {
+  margin: auto;
+  top: 85%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+#toggle {
+  display: none;
+}
+
+.button {
+  z-index: 999;
+  width: 43px;
+  height: 43px;
+  background: rgb(110,121,136);
+  border-radius: 100%;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 1px 30px 10px 0 rgba(#000000, 0.3);
+  cursor: pointer;
+  
+  /* &:before {
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #FFF;
+    transform: rotate(90deg);
+  }
+  &:after {
+    position: absolute;
+    top: 20px;
+    left: 9px;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background: #FFF;
+  } */
+}
+
+.nav {
+  /* transform: translateY(-10%); */
+  opacity: 0;
+  bottom: 0px;
+  left: -50px;
+  transition: all 0.5s ease-in-out;
+  background: #ececec;
+  width: 150px;
+  border-radius: 5px;
+  transform: translateY(10%);
+  box-shadow: 2px 3px 10px 0 rgba(#000000, 0.1);
+}
+
+.nav a {
+  text-align: center;
+  display: block;
+  margin: 15px 0;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'Comfortaa', cursive;
+
+  /* font-family: 'Roboto', sans-serif; */
+  text-transform:;
+  letter-spacing: 2px;
+}
+
+#toggle:checked ~ .nav {
+  opacity: 1;
+  transform: translateY(10%);
+}
+
+#toggle:checked ~ .button {
+  transform: rotate(135deg);
+   box-shadow: 0 0 0 0 transparent;
+}
+  }
+
+  @media only screen 
+    and (min-device-width : 900px) 
+    /* and (max-device-width : 600px)  */
+    /* Styles */   
+  {  
+      body {
+        width: 100vw;
+        height: 100vh;
+        background-image: url(/assets/img/tree_full_page.svg);
+        /* background-size: 100vh 100vw; */
+        
+
+    }
