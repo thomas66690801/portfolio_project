@@ -22,8 +22,7 @@
 
 
 **Links**
->1. github
->2. portfolio website
+>1. github https://github.com/thomas66690801/portfolio_project
 
 
 
